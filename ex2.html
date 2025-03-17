@@ -4,35 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-   <style>
-    table{
-        width: 50%;
-        height: 50%;
-    }
-   </style>
+    <style>
+        header{
+            height: 60px;
+            width: 350px;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        nav{
+            height: 60px;
+            width: 350px;
+            border: 2px solid black; 
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .index{
+            height: 170px;
+            width: 100px;
+            border: 2px solid black;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .content {
+            height: 170px;
+            width: 208px;
+            border: 2px solid black;
+            position: relative;
+            left: 142px;
+            bottom: 213px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+}
+        footer{
+            height: 60px;
+            width: 350px;
+            border: 2px solid black; 
+            position: relative;
+            bottom: 214px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <table border="1">
-        <tr>
-            <th>Country</th>
-            <th>Capital</th>
-            <th>Population</th>
-        </tr>
-        <tr>
-            <td>USA</td>
-            <td>Washington,D.C.</td>
-            <td>328 million</td>
-        </tr>
-        <tr>
-            <td>India</td>
-            <td>New Delhi</td>
-            <td>1.366 billion</td>
-        </tr>
-        <tr>
-            <td>Japan</td>
-            <td>Tokyo</td>
-            <td>126 million</td>
-        </tr>
-    </table>
+    <div class="container">
+        <header>Header Section</header>
+        <nav>Navigation Bar</nav>
+        <aside class="index">Index</aside>
+        <section class="content">Content section</section>
+        <footer>Footer Section</footer>
+    </div>
 </body>
 </html>

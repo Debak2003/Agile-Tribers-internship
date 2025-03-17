@@ -5,48 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        table,th,tr,td{
-            width: 30%;
-            height: 30px;
-            border:2px solid black;
-            border-collapse: collapse;
-            padding: 20px;
+        .item1 { grid-area: header; }
+        .item2 { grid-area: menu; }
+        .item3 { grid-area: main; }
+        .item4 { grid-area: right; }
+        .item5 { grid-area: footer; }
+        
+        .grid-container {
+          width: 900px;
+          height: 500px;
+          display: grid;
+          grid-template-areas:
+          'header header header header header header'
+          'menu main main main right right'
+          'menu footer footer footer footer footer';
+          grid-gap: 10px;
+          background-color:cornflowerblue;
+          padding: 10px;
         }
-        .age{
-            text-align: center;
+        
+        .grid-container > div {
+          background-color:skyblue;
+          text-align: center;
+          padding: 20px 0;
+          font-size: 30px;
         }
-    </style>
+        </style>
 </head>
 <body>
-    <table>
-        <tr>
-            <th colspan="2">FULL NAME</th>
-            <th>AGE</th>
-        </tr>
-        <tr>
-            <td>Fabio</td>
-            <td>Cimo</td>
-            <td>20</td>
-        </tr>
-        <tr>
-            <td>Jasmin</td>
-            <td>Brown</td>
-            <td>18</td>
-        </tr>
-        <tr>
-            <td>James</td>
-            <td>Wick</td>
-            <td>35</td>
-        </tr>
-        <tr>
-            <td>Donald</td>
-            <td>Dawn</td>
-            <td>29</td>
-        </tr>
-        <tr>
-            <td class="age" colspan="2">Average Age</td>
-            <td>22</td>
-        </tr>
-    </table>
+    <div class="grid-container">
+        <div class="item1">Header</div>
+        <div class="item2">Menu</div>
+        <div class="item3">Main</div>  
+        <div class="item4">Right</div>
+        <div class="item5">Footer</div>
+      </div>
 </body>
 </html>

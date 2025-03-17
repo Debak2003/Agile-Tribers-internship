@@ -4,40 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+        }
+        .header, .footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            height: 90px;
+        }
+        .navigation {
+            background-color: #bbb;
+            text-align: center;
+            padding: 10px;
+            height: 90px;
+        }
+        .container {
+            display: flex;
+            flex: 1;
+            padding: 20px;
+        }
+        .main-content {
+            flex: 2;
+            background: #ddd;
+            padding: 20px;
+            margin-right: 10px;
+            width: 90%;
+            
+        }
+        .sidebar {
+            flex: 1;
+            background: #aaa;
+            padding: 20px;
+            width: 90%;
+        }
+        .footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+          
+        }
+    </style>
 </head>
 <body>
-    <h1>Please Fill And Submit Form</h1><hr>
-    <form>
-    <label for="text">Name:</label>
-    <input type="text"><br><br>
-
-    <label for="email">Email:</label>
-    <input type="email"><br><br>
-
-    <p>Select A color you like:</p><br>
-    <input type="radio" id="red" name="fav_color" value="red">
-    <label for="red">red</label><br>
-    <input type="radio" id="green" name="fav_color" value="green">
-    <label for="green">green</label><br>
-    <input type="radio" id="blue" name="fav_color" value="blue">
-    <label for="blue">blue</label><br><br>
-
-    Select your favorite color:
-    <select name="color" id="color">
-        <option value="Red">Red</option>
-        <option value="Green">Green</option>
-        <option value="Blue">Blue</option>
-        <option value="Yellow">Yellow</option>
-      </select>
-      <br><br>
-      <p>Choose your skill level:</p>
-      <input type="checkbox">
-      <label for="Beginner">Beginner</label><br>
-      <input type="checkbox">
-      <label for="Intermediate">Intermediate</label><br>
-      <input type="checkbox">
-      <label for="Advanced">Advanced</label><br><br>
-
-    <button>Submit</button>
+    <div class="header">Header</div>
+    <div class="navigation">Navigation</div>
+    <div class="container">
+        <div class="main-content">Main Content</div>
+        <div class="sidebar">Sidebar</div>
+    </div>
+    <div class="footer">Footer</div>
 </body>
 </html>
