@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color:dimgrey;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .page-title {
+            background-color: #333;
+            width: 150px;
+            color: white;
+            padding: 20px;
+            text-align: left;
+        }
+        .navigation {
+            background-color: #555;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        .introduction {
+            background-color: #777;
+            color: white;
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 50px;
+        }
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+        .main-content {
+            height: 150px;
+            width: 200px;
+            background-color: #111;
+            color: white;
+            padding: 20px;
+            flex: 2;
+        }
+        .sidebar {
+            background-color: #aaa;
+            color: white;
+            padding: 20px;
+            flex: 1;
+        }
+        .footer {
+            height: 100px;
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="page-title">Page title</header>
+        <nav class="navigation">Navigation</nav>
+        <div class="">
+        <section class="introduction">Introduction</section>
+        </div>
+        <div class="content-wrapper">
+            <section class="main-content">Main content area</section>
+            <aside class="sidebar">Sidebar</aside>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

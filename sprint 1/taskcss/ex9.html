@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            width: 600px;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        .header, .footer, .features {
+            grid-column: span 2;
+            background-color: #aac5c5;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .intro-copy, .more-copy {
+            background-color: #c0d6d6;
+            padding: 20px;
+            text-align: center;
+        }
+        .intro-copy {
+            height: 100px;
+            position: relative;
+            top: 31px;
+}
+
+        .hero-image {
+            background-color: #c0d6d6;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .call-to-action1 {
+            background-color: yellow;
+            color: black;
+            width: 40%;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            position: relative;
+            left: 102%;
+        }
+        .call-to-action {
+            background-color:yellow;
+            color: black;
+            width: 80%;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="intro-copy">Intro Copy</div>
+        <div class="hero-image">Hero Image</div>
+        <div class="call-to-action1">Call to Action</div>
+        <div class="features">Features</div>
+        <div class="more-copy">More Copy</div>
+        <div class="call-to-action">Call to Action</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>

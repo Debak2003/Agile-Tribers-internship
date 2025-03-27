@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+          
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "nav nav"
+                "content sidebar"
+                "footer footer";
+            grid-template-columns: 2fr 1fr;
+            grid-template-rows: auto;
+            gap: 10px;
+            padding: 20px;
+        }
+        header {
+            grid-area: header;
+            
+            color:black;
+            text-align: center;
+            padding: 10px;
+        }
+        nav {
+            grid-area: nav;
+            background: black;
+            color: white;
+            padding: 10px;
+          
+          
+        }
+        a{
+            padding-bottom: 20px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            top: 20px;
+        }
+        #lin{
+            text-decoration: none;
+            display: flex;
+            justify-content: end;
+            padding-bottom: 20px;
+            text-decoration: none;
+            color: white;
+            position: relative;
+            top: -0px;
+        }
+        .content {
+            grid-area: content;
+            background: #eee;
+            padding: 10px;
+        }
+        .sidebar {
+            grid-area: sidebar;
+            background: #ddd;
+            padding: 10px;
+        }
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .box {
+            background: white;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+    </style>
+    
+</head>
+<body>
+    <header>
+        <h1>Karka UI Layout</h1>
+    </header>
+    <nav>
+        <a href="#">Link</a> 
+        <a href="#">Link</a> 
+        <a href="#">Link</a> 
+        <a id="lin" href="#">Link</a>
+    </nav>
+    <div class="container">
+        <div class="content">
+            <div class="box">
+                <h2>Title Heading</h2>
+                <p>Title description, Dec 7, 2017</p>
+                <div class="image" style="background: gray; height: 100px;">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima nemo impedit cum doloribus eligendi nesciunt. Nisi excepturi fuga quidem quae adipisci ab rerum harum. Animi veniam esse beatae. Nam, ipsum!</p>
+            </div>
+            <div class="box">
+                <h2>Title Heading</h2>
+                <p>Title description, Sep 2, 2017</p>
+                <div class="image" style="background: gray; height: 100px;">Image</div>
+                <p>Some text...</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, accusantium adipisci officia hic, tempore repudiandae, possimus in cumque suscipit debitis obcaecati tenetur eius voluptatum? Officiis, magnam! Sit perspiciatis dicta incidunt? Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam corrupti quae voluptatum ea doloribus eaque soluta enim ipsam ipsum a laboriosam minima autem nemo beatae, nostrum praesentium vero, commodi accusantium!</p>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="box">
+                <h3>About Me</h3>
+                <div class="image" style="background: gray; height: 50px;">Image</div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore dolorum libero fugit dolore adipisci neque laboriosam non, deserunt recusandae, consequatur dolorem assumenda commodi, unde eveniet impedit minus! Aut, excepturi at!</p>
+            </div>
+            <div class="box">
+                <h3>Popular Post</h3>
+                <div class="image" style="background: gray; height: 50px; margin-bottom: 5px;">Image</div>
+                <div class="image" style="background: gray; height: 50px; margin-bottom: 5px;">Image</div>
+                <div class="image" style="background: gray; height: 50px;">Image</div>
+            </div>
+            <div class="box">
+                <h3>Follow Me</h3>
+                <p>Some text...</p>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

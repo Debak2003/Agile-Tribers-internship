@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         
+       
+        .container {
+            display: grid;
+            grid-template-rows: auto auto 1fr auto auto auto;
+            grid-template-columns: 2fr 1fr;
+            gap: 10px;
+            grid-template-areas: 
+                "header header"
+                "nav nav"
+                "main aside1"
+                "main section"
+                "aside2 aside2"
+                "footer footer";
+            max-width: 400px;
+            margin: 0 auto;
+            font-weight: bold;
+        }
+        header {
+            grid-area: header;
+            background-color: #dcdcdc;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            grid-area: nav;
+            background-color: #cfcfcf;
+            padding: 15px;
+            text-align: center;
+        }
+        main {
+            grid-area: main;
+            background-color: #e0e0e0;
+            padding: 20px;
+        }
+        .aside1 {
+            grid-area: aside1;
+            background-color: #d3d3d3;
+            padding: 20px;
+        }
+        section {
+            grid-area: section;
+            background-color: #e5e5e5;
+            padding: 20px;
+        }
+        .aside2 {
+            grid-area: aside2;
+            background-color: #d9d9d9;
+            padding: 20px;
+            text-align: center;
+        }
+        footer {
+            grid-area: footer;
+            background-color: #c7c7c7;
+            padding: 20px;
+            text-align: center;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>&lt;header&gt;</header>
+        <nav>&lt;nav&gt;</nav>
+        <main>&lt;main&gt;</main>
+        <aside class="aside1">&lt;aside&gt;</aside>
+        <section>&lt;section&gt;</section>
+        <aside class="aside2">&lt;aside&gt;</aside>
+        <footer>&lt;footer&gt;</footer>
+    </div>
+</body>
+</html>

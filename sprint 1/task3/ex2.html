@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+        }
+        .header::before,
+        .header::after {
+            content: "";
+            flex: 1;
+            border-bottom: 1px solid black;
+            margin: 0 100px;
+        }
+        h1 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+        img{
+            height: 300px;
+            width: 500px;
+        }
+        .adven{
+            margin-left: 70px;
+        }
+        .para1{
+            font-size: 18px;
+            margin-left: 70px;
+        }
+        .desc{
+            text-align: center;
+        }
+        p{
+            text-indent: 30px;
+        }
+        footer{
+            text-align: center;
+        }
+        #main{
+            text-align: center;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main">Welcome UI Photo Gallery</h1><hr>
+    <div class="header">
+        <h1>Welcome UI Photo Gallery</h1>
+    </div>
+<div>
+    <img class="adven" src="images/adven.jpg" alt="photo">
+    <img src="images/cam.jpg" alt="photo">
+    <img src="images/panda.jpg" alt="photo">
+</div>
+<div class="para1">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam ad quaerat quam inventore nam, consequuntur aspernatur voluptate repellat repellendus eius cupiditate, ratione ipsum, vel nihil veritatis soluta ea minima. Quisquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, eaque delectus. Aspernatur labore earum eum necessitatibus voluptate. Dolorum, nemo illum. Ipsa hic quibusdam sit repellat dolores voluptatem ut sunt dolore!</p>
+    <hr>
+    <h1 class="desc">Decription about the Page</h1>
+    <p><b>Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Nemo qui quas pariatur maiores! Minus, sapiente voluptas dolor distinctio eum accusamus autem ducimus maiores dicta cupiditate, tempora nam quaerat atque inventore.<b> Lorem ipsum</b> dolor sit amet consectetur adipisicing elit. Rerum sit architecto accusamus dolorum modi obcaecati minus molestias nobis vel qui. Quo quia neque magnam rem explicabo quam, corporis obcaecati culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptatibus alias repellendus fugiat a beatae, tempora totam necessitatibus quod quasi sint illo labore est obcaecati iste vitae pariatur dolores perspiciatis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam iure doloremque, modi dolorum quidem quas. Exercitationem repellat voluptates et eaque nulla dignissimos quaerat velit aliquam? Dignissimos ipsum saepe fuga amet.</p>
+    <hr>
+    <footer>
+        <p>@2023 My Simple Web Page.All rights reserved.</p>
+    </footer>
+</body>
+</html>
